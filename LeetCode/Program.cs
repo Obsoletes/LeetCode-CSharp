@@ -6,7 +6,7 @@ namespace LeetCode
 	{
 		static void Main(string[] args)
 		{
-			var question = new Question.Q12();
+			var question = new Question.Q5();
 			question.Go();
 		}
 	}
