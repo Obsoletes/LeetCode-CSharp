@@ -6,7 +6,7 @@ namespace LeetCode
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			new Question.Q23().Go();
 		}
 	}
 }

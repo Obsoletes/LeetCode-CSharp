@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Question
 {
-	interface IQuestion
+	public class Helper
 	{
-		void Go();
+		static public T[] GetArray<T>(params T[] array)
+		{
+			return array;
+		}
 	}
 }
