@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Question
 {
-	/*
-	 数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。
-	 */
+	/// <summary>
+	/// 数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。
+	/// </summary>
 	public class Q22 : IQuestion
 	{
 		public void GenerateParenthesis(List<string> list, string str, int left, int right)

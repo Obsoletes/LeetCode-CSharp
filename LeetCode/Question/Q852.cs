@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Question
 {
-	/*
-	符合下列属性的数组 arr 称为 山脉数组 ：
-	arr.length >= 3
-	存在 i（0 < i < arr.length - 1）使得：
-	arr[0] < arr[1] < ... arr[i-1] < arr[i]
-	arr[i] > arr[i+1] > ... > arr[arr.length - 1]
-	给你由整数组成的山脉数组 arr ，返回任何满足 arr[0] < arr[1] < ... arr[i - 1] < arr[i] > arr[i + 1] > ... > arr[arr.length - 1] 的下标 i 。
-	 */
+	/// <summary>
+	/// 符合下列属性的数组 arr 称为 山脉数组 ：
+	/// <list type="bullet">
+	///		<item>arr.length &gt;= 3</item>
+	///		<item>存在 i（0 &lt; i &lt; arr.length - 1）使得：</item>
+	///		<item>arr[0] &lt; arr[1] &lt; ... arr[i-1] &lt; arr[i]</item>	
+	///		<item>arr[i] &gt; arr[i+1] &gt; ... &gt; arr[arr.length - 1]</item>	
+	/// </list>
+	/// 给你由整数组成的山脉数组 arr ，
+	/// 返回任何满足 arr[0] &lt; arr[1] &lt; ... arr[i - 1] &lt; arr[i] &gt; arr[i + 1] &gt; ... &gt; arr[arr.length - 1] 的下标 i 。
+	/// </summary>
 	public class Q852 : IQuestion
 	{
 		public int PeakIndexInMountainArray(ReadOnlySpan<int> span, int start)

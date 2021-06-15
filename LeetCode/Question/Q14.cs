@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Question
 {
-
-	/*
-	 编写一个函数来查找字符串数组中的最长公共前缀。
-
-	如果不存在公共前缀，返回空字符串 ""。
-	 */
+	/// <summary>
+	/// 编写一个函数来查找字符串数组中的最长公共前缀。
+	/// </summary>
+	/// <remarks>如果不存在公共前缀，返回空字符串 ""。</remarks>
 	public class Q14 : IQuestion
 	{
 		public string LongestCommonPrefix(string[] strs)

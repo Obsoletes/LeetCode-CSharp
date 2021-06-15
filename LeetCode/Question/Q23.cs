@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Question
 {
-	/*
-	 给你一个链表数组，每个链表都已经按升序排列。
-
-	请你将所有链表合并到一个升序链表中，返回合并后的链表。
-	 */
+	/// <summary>
+	/// <para>给你一个链表数组，每个链表都已经按升序排列。</para>
+	/// <para>请你将所有链表合并到一个升序链表中，返回合并后的链表。</para>
+	/// </summary>
 	public class Q23 : IQuestion
 	{
 		public ListNode MergeKLists(ListNode[] lists)
