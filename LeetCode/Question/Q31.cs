@@ -16,7 +16,7 @@ namespace LeetCode.Question
 		public void NextPermutation(int[] nums)
 		{
 			int i = nums.Length - 2;
-			while (i >= 0 && nums[i] > nums[i + 1])
+			while (i >= 0 && nums[i] >= nums[i + 1])
 			{
 				i--;
 			}
@@ -27,14 +27,27 @@ namespace LeetCode.Question
 				{
 					j--;
 				}
-				if (j >= 0)
-				{
-					var temp = nums[i];
-					nums[i] = nums[j];
-					nums[j] = temp;
-				}
+				Swap(nums, i, j);
 			}
-			Array.Reverse(nums, i + 1, nums.Length - i - 1);
+			Reverse(nums, i + 1);
+		}
+
+		public void Swap(int[] nums, int i, int j)
+		{
+			int temp = nums[i];
+			nums[i] = nums[j];
+			nums[j] = temp;
+		}
+
+		public void Reverse(int[] nums, int start)
+		{
+			int left = start, right = nums.Length - 1;
+			while (left < right)
+			{
+				Swap(nums, left, right);
+				left++;
+				right--;
+			}
 		}
 		public void Go()
 		{
