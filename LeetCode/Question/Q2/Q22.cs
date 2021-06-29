@@ -41,8 +41,8 @@ namespace LeetCode.Question
 		}
 		public void Go()
 		{
-			Console.WriteLine($"[{string.Join(',', GenerateParenthesis(3))}]");
-			Console.WriteLine($"[{string.Join(',', GenerateParenthesis(1))}]");
+			Console.WriteLine(GenerateParenthesis(3).ToArrayString());
+			Console.WriteLine(GenerateParenthesis(1).ToArrayString());
 		}
 	}
 }

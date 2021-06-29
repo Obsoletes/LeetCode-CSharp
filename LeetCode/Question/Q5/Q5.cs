@@ -51,7 +51,6 @@ namespace LeetCode.Question
 			var r = string.Join(null, s.Reverse());
 			int maxLen = 0;
 			int maxEnd = 0;
-			//return LongestPalindrome(s.AsSpan()).ToString();
 			for (int i = 0; i < s.Length; i++)
 			{
 				for (int j = 0; j < s.Length; j++)
@@ -80,8 +79,6 @@ namespace LeetCode.Question
 		}
 		public void Go()
 		{
-			//Console.WriteLine(LongestPalindrome("babad"));
-			//Console.WriteLine(LongestPalindrome("cbbd"));
 			Console.WriteLine(LongestPalindrome("a"));
 			Console.WriteLine(LongestPalindrome("ac"));
 		}

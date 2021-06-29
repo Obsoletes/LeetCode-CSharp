@@ -54,7 +54,6 @@ namespace LeetCode.Question
 		{
 			Console.WriteLine(MergeKLists(Helper.GetArray(ListNode.FromNumber(541), ListNode.FromNumber(431), ListNode.FromNumber(62))));
 			Console.WriteLine(MergeKLists(Helper.GetArray<ListNode>()));
-			//Console.WriteLine(MergeKLists(Helper.GetArray(new ListNode())));
 		}
 	}
 }

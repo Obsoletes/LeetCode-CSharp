@@ -101,14 +101,6 @@ namespace LeetCode.Question
 					current = next;
 				}
 			}
-			/*ListNode Change(ListNode[] arr)
-			{
-				for (int i = arr.Length - 1; i >= 1; i--)
-				{
-					arr[i].next = arr[i - 1];
-				}
-				return arr[arr.Length - 1];
-			}*/
 		}
 		public void Go()
 		{

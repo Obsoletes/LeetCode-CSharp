@@ -59,11 +59,11 @@ namespace LeetCode.Question
 		}
 		public void Go()
 		{
-			Console.WriteLine($"[{string.Join(',', FindSubstring("wordgoodgoodgoodbestword", Helper.GetArray("word", "good", "best", "good")))}]");
-			Console.WriteLine($"[{string.Join(',', FindSubstring("ababababab", Helper.GetArray("ababa", "babab")))}]");
-			Console.WriteLine($"[{string.Join(',', FindSubstring("barfoothefoobarman", Helper.GetArray("bar", "foo")))}]");
-			Console.WriteLine($"[{string.Join(',', FindSubstring("barfoofoobarthefoobarman", Helper.GetArray("bar", "foo", "the")))}]");
-			Console.WriteLine($"[{string.Join(',', FindSubstring("aaaaaaaaaaaaaa", Helper.GetArray("aa", "aa")))}]");
+			Console.WriteLine(FindSubstring("wordgoodgoodgoodbestword", Helper.GetArray("word", "good", "best", "good")).ToArrayString());
+			Console.WriteLine(FindSubstring("ababababab", Helper.GetArray("ababa", "babab")).ToArrayString());
+			Console.WriteLine(FindSubstring("barfoothefoobarman", Helper.GetArray("bar", "foo")).ToArrayString());
+			Console.WriteLine(FindSubstring("barfoofoobarthefoobarman", Helper.GetArray("bar", "foo", "the")).ToArrayString());
+			Console.WriteLine(FindSubstring("aaaaaaaaaaaaaa", Helper.GetArray("aa", "aa")).ToArrayString());
 
 		}
 

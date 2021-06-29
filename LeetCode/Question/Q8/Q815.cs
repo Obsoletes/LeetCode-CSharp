@@ -88,36 +88,6 @@ namespace LeetCode.Question
 		{
 			Console.WriteLine(NumBusesToDestination(Helper.GetArray(Helper.GetArray(1, 2, 7), Helper.GetArray(3, 6, 7)), 1, 6));
 			Console.WriteLine(NumBusesToDestination(Helper.GetArray(Helper.GetArray(7, 12), Helper.GetArray(4, 5, 15), Helper.GetArray(6), Helper.GetArray(15, 19), Helper.GetArray(9, 12, 13)), 15, 12));
-			/*
-			 [[25,33],
-			 [3,5,13,22,23,29,37,45,49],
-			 [15,16,41,47],
-			 [5,11,17,23,33],
-			 [10,11,12,29,30,39,45],
-			 [2,5,23,24,33],
-			 [1,2,9,19,20,21,23,32,34,44],
-			 [7,18,23,24],
-			 [1,2,7,27,36,44],
-			 [7,14,33]]
-7
-47
-			 */
-			/*
-			 * 
-			 * [[10,13,22,28,32,35,43],
-			 * [2,11,15,25,27],
-			 * [6,13,18,25,42],
-			 * [5,6,20,27,37,47],
-			 * [7,11,19,23,35],
-			 * [7,11,17,25,31,43,46,48],
-			 * [1,4,10,16,25,26,46],
-			 * [7,11],
-			 * [3,9,19,20,21,24,32,45,46,49],
-			 * [11,41]]
-37
-43
-
-			 */
 			Console.WriteLine(NumBusesToDestination(Helper.GetArray(
 		   Helper.GetArray(10, 13, 22, 28, 32, 35, 43),
 		   Helper.GetArray(2, 11, 15, 25, 27),

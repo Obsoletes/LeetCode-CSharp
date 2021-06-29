@@ -35,9 +35,9 @@ namespace LeetCode.Question
 		}
 		public void Go()
 		{
-			Console.WriteLine($"[{string.Join(',', SearchRange(Helper.GetArray(5, 7, 7, 8, 8, 10), 8))}]");
-			Console.WriteLine($"[{string.Join(',', SearchRange(Helper.GetArray(5, 7, 7, 8, 8, 10), 6))}]");
-			Console.WriteLine($"[{string.Join(',', SearchRange(Helper.GetArray<int>(), 0))}]");
+			Console.WriteLine(SearchRange(Helper.GetArray(5, 7, 7, 8, 8, 10), 8).ToArrayString());
+			Console.WriteLine(SearchRange(Helper.GetArray(5, 7, 7, 8, 8, 10), 6).ToArrayString());
+			Console.WriteLine(SearchRange(Helper.GetArray<int>(), 0).ToArrayString());
 		}
 	}
 }

@@ -50,9 +50,7 @@ namespace LeetCode.Question
 			Console.WriteLine(IsMatch("adceb", "*a*b"));
 			Console.WriteLine(IsMatch("acdcb", "a*c?b"));
 			Console.WriteLine(IsMatch("aaabbbaabaaaaababaabaaabbabbbbbbbbaabababbabbbaaaaba", "a*******b"));
-			Console.WriteLine(IsMatch("aab",
-"c*a*b"));
-
+			Console.WriteLine(IsMatch("aab", "c*a*b"));
 		}
 	}
 }

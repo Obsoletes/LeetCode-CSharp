@@ -68,13 +68,9 @@ namespace LeetCode.Question
 		}
 		public void Go()
 		{
-			Console.WriteLine(ToString(ThreeSum(Helper.GetArray(-1, 0, 1, 2, -1, -4))));
-			Console.WriteLine(ToString(ThreeSum(Helper.GetArray(0))));
-			Console.WriteLine(ToString(ThreeSum(Helper.GetArray<int>())));
-		}
-		private string ToString(IList<IList<int>> list)
-		{
-			return string.Join(',', list.Select(l => $"[{string.Join(',', l)}]"));
+			Console.WriteLine(ThreeSum(Helper.GetArray(-1, 0, 1, 2, -1, -4)).ToArrayString2());
+			Console.WriteLine(ThreeSum(Helper.GetArray(0)).ToArrayString2());
+			Console.WriteLine(ThreeSum(Helper.GetArray<int>()).ToArrayString2());
 		}
 	}
 }

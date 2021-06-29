@@ -40,10 +40,10 @@ namespace LeetCode.Question
 		}
 		public void Go()
 		{
-			Console.WriteLine($"[{string.Join(',', PlusOne(Helper.GetArray(1, 2, 3)))}]");
-			Console.WriteLine($"[{string.Join(',', PlusOne(Helper.GetArray(4, 3, 2, 1)))}]");
-			Console.WriteLine($"[{string.Join(',', PlusOne(Helper.GetArray(0)))}]");
-			Console.WriteLine($"[{string.Join(',', PlusOne(Helper.GetArray(9)))}]");
+			Console.WriteLine(PlusOne(Helper.GetArray(1, 2, 3)).ToArrayString());
+			Console.WriteLine(PlusOne(Helper.GetArray(4, 3, 2, 1)).ToArrayString());
+			Console.WriteLine(PlusOne(Helper.GetArray(0)).ToArrayString());
+			Console.WriteLine(PlusOne(Helper.GetArray(9)).ToArrayString());
 		}
 	}
 }

@@ -78,8 +78,8 @@ namespace LeetCode.Question
 		}
 		public void Go()
 		{
-			Console.WriteLine(ToString(FourSum(Helper.GetArray(1, 0, -1, 0, -2, 2), 0)));
-			Console.WriteLine(ToString(FourSum(Helper.GetArray<int>(), 0)));
+			Console.WriteLine(FourSum(Helper.GetArray(1, 0, -1, 0, -2, 2), 0).ToArrayString2());
+			Console.WriteLine(FourSum(Helper.GetArray<int>(), 0).ToArrayString2());
 		}
 		private string ToString(IList<IList<int>> list)
 		{

@@ -53,16 +53,16 @@ namespace LeetCode.Question
 		{
 			var arr = Helper.GetArray(1, 1);
 			NextPermutation(arr);
-			Console.WriteLine($"[{string.Join(',', arr)}]");
+			Console.WriteLine(arr.ToArrayString());
 			arr = Helper.GetArray(3, 2, 1);
 			NextPermutation(arr);
-			Console.WriteLine($"[{string.Join(',', arr)}]");
+			Console.WriteLine(arr.ToArrayString());
 			arr = Helper.GetArray(1, 1, 5);
 			NextPermutation(arr);
-			Console.WriteLine($"[{string.Join(',', arr)}]");
+			Console.WriteLine(arr.ToArrayString());
 			arr = Helper.GetArray(1);
 			NextPermutation(arr);
-			Console.WriteLine($"[{string.Join(',', arr)}]");
+			Console.WriteLine(arr.ToArrayString());
 		}
 	}
 }

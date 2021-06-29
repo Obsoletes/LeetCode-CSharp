@@ -39,9 +39,9 @@ namespace LeetCode.Question
 		}
 		public void Go()
 		{
-			Console.WriteLine($"[{string.Join(',', LetterCombinations("23"))}]");
-			Console.WriteLine($"[{string.Join(',', LetterCombinations(""))}]");
-			Console.WriteLine($"[{string.Join(',', LetterCombinations("2"))}]");
+			Console.WriteLine(LetterCombinations("23").ToArrayString());
+			Console.WriteLine(LetterCombinations("").ToArrayString());
+			Console.WriteLine(LetterCombinations("2").ToArrayString());
 		}
 	}
 }

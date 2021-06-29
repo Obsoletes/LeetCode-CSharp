@@ -108,8 +108,6 @@ namespace LeetCode.Question
 					Console.WriteLine("\n┗━━━━━━━━┷━━━━━━━━┷━━━━━━━━┛");
 				else
 					Console.WriteLine("\n┠────────┼────────┼────────┨");
-				/*if (i % 3 == 2)
-					Console.WriteLine();*/
 			}
 		}
 	}

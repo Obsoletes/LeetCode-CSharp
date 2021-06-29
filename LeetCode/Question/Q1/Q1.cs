@@ -33,9 +33,9 @@ namespace LeetCode.Question
 		}
 		public void Go()
 		{
-			Console.WriteLine(string.Join(',', TwoSum(new int[] { 2, 7, 11, 15 }, 9)));
-			Console.WriteLine(string.Join(',', TwoSum(new int[] { 3, 2, 4 }, 6)));
-			Console.WriteLine(string.Join(',', TwoSum(new int[] { 3, 3 }, 6)));
+			Console.WriteLine(TwoSum(Helper.GetArray(2, 7, 11, 15), 9).ToArrayString());
+			Console.WriteLine(TwoSum(Helper.GetArray(3, 2, 4), 6).ToArrayString());
+			Console.WriteLine(TwoSum(Helper.GetArray(3, 3), 6).ToArrayString());
 		}
 	}
 }
