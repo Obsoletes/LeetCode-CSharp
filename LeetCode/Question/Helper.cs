@@ -16,9 +16,9 @@ namespace LeetCode.Question
 		{
 			return $"[{string.Join(',', list)}]";
 		}
-		static public string ToArrayString2<T>(this IEnumerable<IEnumerable<T>> list)
+		static public string ToArrayString2<T>(this IEnumerable<IEnumerable<T>> list, bool indent = false)
 		{
-			return list.Select(l => l.ToArrayString()).ToArrayString();
+			return list.Select(l => indent ? $"\n    {l.ToArrayString()}" : l.ToArrayString()).ToArrayString();
 		}
 	}
 }
